@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@700;800&display=swap');
+
+
+:root {
+  --container-bg: #013243;
+  --title-font: 'Sen', sans-serif;
+  --title-color: #32F5C8;
+  --text-font: 'Inter', sans-serif;
+  --text-color: #A9BDC6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: var(--container-bg);
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 9rem;
+  background-image: url(Assets/User\ Avatar\ 1.svg), url(Assets/User\ Avatar\ 2.svg), url(Assets/User\ Avatar\ 3.svg), url(Assets/User\ Avatar\ 4.svg), url(Assets/User\ Avatar\ 5.svg);
+  background-repeat: no-repeat;
+  background-position: top 44% right 16.5%, top 6% right 15%, top 15% left 3%, bottom 13% right 20%, top 11% right 33%;
+}
+
+.hero {
+  padding-bottom: 3rem;
+}
+
+header {
+  padding-top: 2rem;
+}
+
+.title {
+  margin: 4rem 0 2rem;
+  text-transform: capitalize;
+  font-size: 9rem;
+  line-height: 1;
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+
+.text {
+  width: 50%;
+  margin-bottom: 2rem;
+  font-size: 25px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.btn-wrap {
+  width: 19rem;
+  height: 5rem;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: var(--container-bg);
+  background: var(--title-color);
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  background: #BEFEEF;
+  box-shadow: 0 0 15px var(--title-color);
+}
+
+.social {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.social .icon {
+  margin-right: 1rem;
+  width: 50px;
+}
+
+.social p {
+  font-size: 25px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+
+@media(max-width: 1129px) {
+  .container {
+    background-image: url(Assets/User\ Avatar\ 1.svg), url(Assets/User\ Avatar\ 2.svg), url(Assets/User\ Avatar\ 3.svg), url(Assets/User\ Avatar\ 4.svg), url(Assets/User\ Avatar\ 5.svg);
+    background-repeat: no-repeat;
+    background-position: top 44% right 16.5%, top 5% right 10%, top 15% left 3%, bottom 13% right 20%, top 11% right 33%;
+  }
+  .title {
+    font-size: 7rem;
+    line-height: 1.2;
+  }
+  .text {
+    width: 70%;
+  }
+}
+
+@media(max-width: 974px) {
+  .container {
+    padding: 0 5rem;
+  }
+  .title {
+    font-size: 6.8rem;
+  }
+}
+
+@media(max-width: 872px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media(max-width: 787px) {
+  .container {
+    padding: 0 2rem;
+    background-image: url(Assets/User\ Avatar\ 1.svg), url(Assets/User\ Avatar\ 2.svg), url(Assets/User\ Avatar\ 3.svg), url(Assets/User\ Avatar\ 4.svg), url(Assets/User\ Avatar\ 5.svg);
+    background-repeat: no-repeat;
+    background-position: top 35% right 7%, top 5% right 10%, top 15% left 7%, bottom 10% right 15%, top 28% right 27%;
+  }
+  .title {
+    margin-top: 15rem;
+    font-size: 6rem;
+  }
+  .text {
+    width: 70%;
+  }
+  .social {
+    margin-top: 10rem;
+  }
+}
+
+@media(max-width: 708px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 598px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media(max-width: 475px) {
+  .container {
+    padding: 0 2rem;
+    background-image: url(Assets/User\ Avatar\ 2.svg), url(Assets/User\ Avatar\ 3.svg);
+    background-repeat: no-repeat;
+    background-position: top 15% right 5%, top 18% left 18%;
+    background-size: auto, 28%;
+  }
+
+  .title {
+    margin-top: 10rem;
+    font-size: 3.3rem;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media(max-width: 410px) {
+  .container {
+    background-image: url(Assets/User\ Avatar\ 2.svg), url(Assets/User\ Avatar\ 3.svg);
+    background-repeat: no-repeat;
+    background-position: top 30% right 5%, top 18% left 18%;
+    background-size: 30%, 28%;
+  }
+  .title {
+    font-size: 2.5rem;
+    /* text-align: center; */
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .btn-wrap {
+    width: 12rem;
+    height: 3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .social {
+    margin-top: 4rem;
+  }
+
+  .social p {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 324px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .title {
+    margin-top: 4rem;
+    font-size: 1.9rem;
+  }
+  
+}
